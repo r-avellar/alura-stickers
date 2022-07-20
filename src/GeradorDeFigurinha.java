@@ -19,7 +19,7 @@ public class GeradorDeFigurinha {
 
         int largura = original.getWidth();
         int altura = original.getHeight();
-        int novaAltura = altura + 20;
+        int novaAltura = altura + 200;
 
         BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
 
@@ -29,13 +29,13 @@ public class GeradorDeFigurinha {
 
         //configurar a fonte
 
-        Font fonte = new Font(Font.SANS_SERIF, Font.BOLD, 24);
-        graphics.setColor(Color.black);
+        Font fonte = new Font(Font.SANS_SERIF, Font.BOLD, 72);
+        graphics.setColor(Color.yellow);
         graphics.setFont(fonte);
 
         //escrever uma frase na nova imagem
 
-        graphics.drawString("TOPZERA", 0, novaAltura);
+        graphics.drawString("TOPZERA", 100, altura + 150);
 
         //escrever no arquivo
 
